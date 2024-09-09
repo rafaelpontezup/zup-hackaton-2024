@@ -2,8 +2,6 @@ package br.com.zup.hackton.palindromo;
 
 import org.apache.commons.lang3.StringUtils;
 
-import java.text.Normalizer;
-
 /**
  * Algumas palavras e frases:
  *
