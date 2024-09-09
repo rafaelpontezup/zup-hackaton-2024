@@ -11,6 +11,8 @@ import org.apache.commons.lang3.StringUtils;
  *
  * https://codepen.io/jeffreypoland/pen/iuItG
  * https://gist.github.com/marufsiddiqui/9938268
+ * https://gist.github.com/rponte/893494
+ * https://www.baeldung.com/java-remove-accents-from-text
  */
 public class Palindromo {
 
