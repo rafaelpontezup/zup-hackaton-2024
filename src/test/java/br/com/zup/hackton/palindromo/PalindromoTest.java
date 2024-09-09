@@ -29,6 +29,8 @@ class PalindromoTest {
         assertTrue(palindromo.isPalidromo("socos"));
         assertTrue(palindromo.isPalidromo("salas"));
         assertTrue(palindromo.isPalidromo("ralar"));
+        assertTrue(palindromo.isPalidromo("e2e"));
+        assertTrue(palindromo.isPalidromo("1-a-1"));
     }
 
     /**
@@ -48,22 +50,6 @@ class PalindromoTest {
     }
 
     /**
-     * Cenário de case-insensitive
-     */
-    @Test
-    @DisplayName("deve ser um palindromo quando texto possuir letras minusculas e maiusculas")
-    public void t3() {
-        // cenário
-        Palindromo palindromo = new Palindromo();
-
-        // ação e validação
-        assertTrue(palindromo.isPalidromo("Ana"));
-        assertTrue(palindromo.isPalidromo("ovO"));
-        assertTrue(palindromo.isPalidromo("ARarA"));
-        assertTrue(palindromo.isPalidromo("reVivER"));
-    }
-
-    /**
      * Cenário Happy-path 2
      *
      * Usa exemplos de frase como estas:
@@ -72,13 +58,30 @@ class PalindromoTest {
      */
     @Test
     @DisplayName("deve ser um palindromo quando texto for uma frase")
+    public void t3() {
+        // cenário
+        Palindromo palindromo = new Palindromo();
+
+        // ação e validação
+        assertTrue(palindromo.isPalidromo("anotaram a data da maratona"));
+        assertTrue(palindromo.isPalidromo("socorram-me subi no onibus em marrocos"));
+    }
+
+    /**
+     * Cenário de case-insensitive
+     */
+    @Test
+    @DisplayName("deve ser um palindromo quando texto possuir letras minusculas e maiusculas")
     public void t4() {
         // cenário
         Palindromo palindromo = new Palindromo();
 
         // ação e validação
-        assertTrue(palindromo.isPalidromo("Anotaram a data da maratona"));
-        assertTrue(palindromo.isPalidromo("Socorram-me subi no onibus em Marrocos"));
+        assertTrue(palindromo.isPalidromo("Ana"));
+        assertTrue(palindromo.isPalidromo("ovO"));
+        assertTrue(palindromo.isPalidromo("ARarA"));
+        assertTrue(palindromo.isPalidromo("reVivER"));
+        assertTrue(palindromo.isPalidromo("socorram-me subi no onibus em marrocos"));
     }
 
     /**
