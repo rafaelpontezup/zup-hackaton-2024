@@ -1,4 +1,4 @@
-package br.com.zup.hackton.palindromo;
+package br.com.zup.hackaton.palindromo;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

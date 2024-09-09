@@ -1,4 +1,4 @@
-package br.com.zup.hackton.palindromo;
+package br.com.zup.hackaton.palindromo;
 
 import org.apache.commons.lang3.StringUtils;
 
